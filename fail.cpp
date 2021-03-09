@@ -27,7 +27,11 @@ int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen,
   for (unsigned int i = 0; i <= arrayHeapLen; i++) {
       if (i < sizeof(arrayStack)) {
           arrayHeap[i] = 0;
+      } 
+      else {
+          printf("ERROR: Stack access out of bounds!");
       }
+
   }
 
   return 0;
@@ -36,7 +40,7 @@ int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen,
 int main(void) {
   int arrayStack[5];
   int* arrayHeap = new int[5];
-  memcheckFailDemo(arrayStack, 5, arrayHeap, 5);
+  memcheckFailDemo(arrayStack, sizeof(arrayStack), arrayHeap, sizeof(&arrayHeap));
   return 0;
 }
 
