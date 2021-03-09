@@ -29,7 +29,7 @@ int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen,
           arrayHeap[i] = 0;
       } 
       else {
-          printf("ERROR: Stack access out of bounds!");
+          printf("ERROR: Heap access out of bounds!");
       }
 
   }
