@@ -23,8 +23,11 @@ int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen,
           printf("ERROR: Stack access out of bounds!");
       }
   }
+
   for (unsigned int i = 0; i <= arrayHeapLen; i++) {
-      arrayHeap[i] = 0;
+      if (i < sizeof(arrayStack)) {
+          arrayHeap[i] = 0;
+      }
   }
 
   return 0;
