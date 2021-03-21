@@ -1,0 +1,15 @@
+10-12 	CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')
+13-14 	CWE-121: Stack-based Buffer Overflow
+15-17 	CWE-122: Heap-based Buffer Overflow
+18-19 	CWE-188: Reliance on Data/Memory Layout
+20-23 	CWE-415: Double Free
+24		CWE-416: Use After Free		
+25-29	CWE-457: Use of Uninitialized Variable
+30		OUT OF BOUNDS
+31-32	CWE-468: Incorrect Pointer Scaling
+33-34	CWE-476: NULL Pointer Dereference
+35-38	CWE-480: Use of Incorrect Operator (CWE-481: Assigning instead of Comparing)
+5-8		CWE-676: Use of Potentially Dangerous Function
+39-42	TYPE OVERFLOW
+
+http://cwe.mitre.org/data/definitions/658.html
